@@ -1,0 +1,29 @@
+
+<div class="items-container d-flex justify-content-center flex-column">
+
+  <div class="search input-group mb-3">
+    <input type="text" class="form-control" placeholder="¿Qué estás buscando?" aria-label="Buscar" aria-describedby="button-search" [(ngModel)]="search">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" id="button-search" (click)="getItems('all')">
+        <img src="/assets/search-icon.png">
+      </button>
+    </div>
+  </div>
+
+  <div class="search-types">
+    <span (click)="getItems('artist')">A r t i s t a s</span> ●
+    <span (click)="getItems('album')">Á l b u m e s</span> ●
+    <span (click)="getItems('song')">C a n c i o n e s</span>
+  </div>
+
+  <div class="items">
+    <div *ngFor="let item of items">
+      <a href="#">
+        <img src="{{ item.image }}"><br>
+        <span>{{ item.name }}</span><br>
+        <span>{{ item.artist }}</span><br>
+      </a>
+    </div>
+  </div>
+
+</div>

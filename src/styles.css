@@ -1,0 +1,98 @@
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  color: #fff;
+  background-color: #7b5455;
+  font-weight: 700;
+}
+a, a:visited, a:hover, a:focus {
+  color: #fff;
+}
+
+/* header */
+
+header {
+  text-align: right;
+  padding: 30px;
+}
+header .profile {
+  display: inline-block;
+  cursor: pointer;
+}
+header .profile .arrow {
+  vertical-align: top;
+  padding: 23px 8px 0 0;
+}
+header .profile .picture {
+  width: 65px;
+  height: 65px;
+  border-radius: 33px;
+  border: 2px solid #e0bf53;
+  box-shadow: 5px 5px 20px #000;
+}
+
+/* sidebar */
+
+.sidebar {
+  text-align: right;
+  padding: 30px;
+  width: 190px;
+  height: 100%;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  right: -190px;
+  background-color: #683c3d;
+  transition: right .3s;
+}
+.sidebar.open {
+  right: 0;
+}
+.sidebar .profile {
+  display: inline-block;
+  cursor: pointer;
+}
+.sidebar .profile .arrow {
+  vertical-align: top;
+  padding: 23px 8px 0 0;
+}
+.sidebar .profile .picture {
+  width: 65px;
+  height: 65px;
+  border-radius: 33px;
+  border: 2px solid #e0bf53;
+  box-shadow: 5px 5px 20px #000;
+}
+.sidebar .logo {
+  width: 110px;
+  height: 75px;
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+}
+
+/* footer */
+
+footer {
+  text-align: right;
+  width: 100%;
+  padding: 15px 30px;
+}
+footer .logo {
+  width: 110px;
+  height: 75px;
+}
+footer .links {
+  border-top: 2px solid #531412;
+  margin-top: 20px;
+  padding-top: 5px;
+  color: #531412;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+footer .links span {
+  margin: 0 10px;
+  display: inline-block;
+}
